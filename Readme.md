@@ -1,3 +1,3 @@
-# Often Used Implement
+# Often Used Implements
 
-A curuited list of often used tools and commands.
+A curated list of often used tools and commands.
