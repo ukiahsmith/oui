@@ -19,3 +19,17 @@ How do I set the date when making a commit?
 ```
 git commit --date=20191130T20:24:00
 ```
+
+How to list all files in git history?
+
+```
+git log --pretty=format: --name-only --diff-filter=A | sort -u
+```
+
+How do I remove a file completely from the history?
+
+*Warning, this will rewrite history*
+
+```
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>' HEAD
+```
