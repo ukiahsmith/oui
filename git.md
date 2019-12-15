@@ -33,3 +33,9 @@ How do I remove a file completely from the history?
 ```
 git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>' HEAD
 ```
+
+How can I push tags and branches to the upstream? (requires git 2.4.1)
+
+```
+git config --global push.followTags true
+```
