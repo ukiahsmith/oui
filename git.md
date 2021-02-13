@@ -51,3 +51,9 @@ git push origin --delete origin master
 ```
 git rebase -i --root
 ```
+
+### How can I get rid of commits with no changes? Empty commits.
+
+```
+FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --prune-empty
+```
