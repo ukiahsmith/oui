@@ -45,3 +45,9 @@ git config --global push.followTags true
 ```
 git push origin --delete origin master
 ```
+
+### How can I rebase the first commit?
+
+```
+git rebase -i --root
+```
