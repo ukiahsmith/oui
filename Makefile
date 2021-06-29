@@ -4,7 +4,8 @@ help: #Display this help message.
 	@echo ""
 	@echo "Title of the project"
 	@echo ""
-	@grep '^[#[a-zA-Z].*:' Makefile | sed 's/:.*#/:/' | column -s ':' -t | sort -h
+	@grep '^[a-zA-Z_\-]\+:' Makefile | sed 's/:.*#[ ]*/:/' | column -s ':' -t | sort -h
+
 
 build: #Create the X
 
